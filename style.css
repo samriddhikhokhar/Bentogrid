@@ -169,7 +169,7 @@
             align-items: center;
             justify-content: center;
         }
-        .card-1 .brand-overlay {
+        .card-1 .about-us {
             z-index: 2;
             text-align: center;
             color: var(--brand-blue);
