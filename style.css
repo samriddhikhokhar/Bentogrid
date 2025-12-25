@@ -174,7 +174,7 @@
             text-align: center;
             color: var(--brand-blue);
         }
-        
+    
         .card-2 {
             grid-column: span 1;
             grid-row: span 2;
@@ -217,6 +217,38 @@
         }
 
         /* --- 5. RESPONSIVE --- */
+        @media (max-width: 768px) {
+            
+            nav {
+                flex-direction: column;
+                padding: 1rem;
+                align-items: center; 
+            }
+
+            .nav-links {
+                width: 100%; 
+                display: flex;
+                flex-direction: column; 
+                align-items: center;
+                gap: 10px; 
+                margin-top: 15px; 
+            }
+
+            .nav-links a {
+                margin: 0; 
+                padding: 10px 0; 
+                width: 70%; 
+                text-align: center;
+            }
+
+            .btn-order {
+                width: 70%; 
+                margin-top: 10px; 
+                background-color: var(--brand-blue); 
+                color: var(--white) !important; 
+            }
+        }
+
         @media (max-width: 900px) {
             .bento-grid {
                 grid-template-columns: repeat(2, 1fr);
