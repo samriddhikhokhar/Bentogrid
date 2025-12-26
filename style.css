@@ -16,14 +16,18 @@
             padding: 0;
             box-sizing: border-box;
         }
-
+        
         body {
             font-family: 'Montserrat', sans-serif;
             background-color: var(--bg-cream);
             color: var(--text-dark);
             line-height: 1.6;
         }
-
+        
+        html, body, * {
+            -ms-overflow-style: none; 
+            scrollbar-width: none; 
+    
         /* --- 2. NAVBAR --- */
         nav {
             display: flex;
@@ -278,3 +282,33 @@
             }
         }
         
+        /* --- 6. FOOTER --- */
+        footer {
+            background-color: var(--brand-blue);
+            color: var(--white);
+            padding: 2rem 5%;
+            text-align: center;
+            margin-top: 3rem;
+        }
+        .footer-links {
+            margin-bottom: 1rem;
+        }
+
+        .footer-links a {
+            color: var(--white);
+            margin: 0 1rem;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--brand-coral);
+        }
+        
+        .footer-bottom {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+    
